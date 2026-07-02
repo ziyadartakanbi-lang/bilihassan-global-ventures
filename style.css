@@ -1,0 +1,494 @@
+/* ===========================
+   BILIHASSAN GLOBAL VENTURES
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f9fc;
+    color:#333;
+    line-height:1.7;
+}
+
+/* NAVIGATION */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#002B7F;
+    z-index:1000;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+nav{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.brand img{
+    width:85px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#FFD700;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,43,127,.75),rgba(0,43,127,.75)),
+    url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-logo{
+    width:180px;
+    margin-bottom:25px;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#FFD700;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:850px;
+    margin:auto;
+    font-size:18px;
+}
+
+.hero-buttons{
+    margin-top:35px;
+}
+
+/* BUTTONS */
+
+.btn{
+    display:inline-block;
+    background:#FFD700;
+    color:#002B7F;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+}
+
+.btn-outline{
+    background:transparent;
+    border:2px solid #FFD700;
+    color:#FFD700;
+}
+
+.btn-outline:hover{
+    background:#FFD700;
+    color:#002B7F;
+}
+
+/* SECTIONS */
+
+section{
+    padding:100px 10%;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+section h2{
+    text-align:center;
+    color:#002B7F;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.section-text{
+    text-align:center;
+    color:#666;
+    margin-bottom:50px;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+    background:#ffffff;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+    color:#555;
+}
+
+/* ===========================
+   PRODUCTS
+=========================== */
+
+.products{
+    background:#f8f9fc;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h3{
+    color:#002B7F;
+    text-align:center;
+    margin:20px 0 10px;
+}
+
+.card p{
+    text-align:center;
+    padding:0 20px 25px;
+    color:#666;
+}
+
+/* ===========================
+   WHY CHOOSE US
+=========================== */
+
+.why-us{
+    background:#ffffff;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.why-card{
+    background:#f8f9fc;
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.why-card:hover{
+    background:#002B7F;
+    color:white;
+    transform:translateY(-10px);
+}
+
+.why-card h3{
+    margin-bottom:15px;
+}
+
+/* ===========================
+   SERVICES
+=========================== */
+
+.services{
+    background:#002B7F;
+    color:white;
+}
+
+.services h2{
+    color:#FFD700;
+}
+
+.services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.service-card{
+    background:rgba(255,255,255,.08);
+    padding:35px;
+    border-radius:15px;
+    text-align:center;
+}
+
+.service-card h3{
+    color:#FFD700;
+    margin-bottom:15px;
+}
+
+/* ===========================
+   REQUEST QUOTE
+=========================== */
+
+.quote{
+    background:#ffffff;
+}
+
+.quote form{
+    max-width:700px;
+    margin:40px auto 0;
+}
+
+.quote input,
+.quote textarea{
+    width:100%;
+    padding:18px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    font-family:'Poppins',sans-serif;
+}
+
+.quote textarea{
+    height:180px;
+    resize:none;
+}
+
+.quote button{
+    background:#FFD700;
+    color:#002B7F;
+    border:none;
+    padding:16px 40px;
+    font-size:18px;
+    font-weight:600;
+    border-radius:50px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.quote button:hover{
+    background:#002B7F;
+    color:#fff;
+}
+
+/* ===========================
+   CONTACT
+=========================== */
+
+.contact{
+    background:#f8f9fc;
+    text-align:center;
+}
+
+.contact-box{
+    max-width:700px;
+    margin:40px auto 0;
+    background:#fff;
+    padding:40px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.contact-box p{
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#001A4D;
+    color:white;
+    text-align:center;
+    padding:60px 10%;
+}
+
+footer h2{
+    color:#FFD700;
+    margin-bottom:20px;
+}
+
+footer p{
+    margin:10px 0;
+    color:#ddd;
+}
+
+/* ===========================
+   FLOATING WHATSAPP
+=========================== */
+
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:65px;
+    height:65px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+    transition:.3s;
+    z-index:999;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+}
+
+/* ===========================
+   ANIMATIONS
+=========================== */
+
+.card,
+.why-card,
+.service-card,
+.contact-box{
+    transition:all .3s ease;
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero{
+        height:auto;
+        padding:160px 20px 100px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero h2{
+        font-size:24px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .hero-logo{
+        width:130px;
+    }
+
+    section{
+        padding:70px 20px;
+    }
+
+    section h2{
+        font-size:32px;
+    }
+
+    .btn{
+        display:block;
+        margin:15px auto;
+        width:220px;
+        text-align:center;
+    }
+}
+
+/* ===========================
+   SCROLL ANIMATIONS
+=========================== */
+
+.hidden{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all .8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.quick-quote{
+    background:#FFD700;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.quick-quote h2{
+    color:#002B7F;
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.quick-quote p{
+    max-width:700px;
+    margin:0 auto 30px;
+    font-size:18px;
+}
