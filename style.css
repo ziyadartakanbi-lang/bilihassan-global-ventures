@@ -491,4 +491,13 @@ footer p{
     max-width:700px;
     margin:0 auto 30px;
     font-size:18px;
+
+   select{
+    width:100%;
+    padding:18px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
 }
