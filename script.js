@@ -59,3 +59,28 @@ sections.forEach(section => {
     observer.observe(section);
 
 });
+
+document.getElementById("orderForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let location = document.getElementById("location").value;
+    let product = document.getElementById("product").value;
+    let quantity = document.getElementById("quantity").value;
+    let note = document.getElementById("note").value;
+
+    let message =
+`🛒 NEW ORDER FROM WEBSITE
+
+👤 Name: ${name}
+📞 Phone: ${phone}
+📍 Location: ${location}
+📦 Product: ${product}
+📊 Quantity: ${quantity}
+📝 Note: ${note}`;
+
+    let whatsappURL = "https://wa.me/2348164690649?text=" + encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
+});
